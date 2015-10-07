@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body ng-app="calc">
+	<div class="container">
+		<div class="calc" ng-controller="calcController">
+			<div class="display">
+				{{resulte}}
+			</div>
+			<div class="buttons">
+				<span id="ac" class="btn btn-default" ng-click="reset()">AC</span>
+				<span id="ec" class="btn btn-default" ng-click="reset()">EC</span>
+				<span id="proc" class="btn btn-default" ng-click="">%</span>
+				<span id="devide" class="btn btn-default" ng-click="operation('/')">/</span>
+				<span id="seven" class="btn btn-default" ng-click="getDigit(7)">7</span>
+				<span id="eight" class="btn btn-default" ng-click="getDigit(8)">8</span>
+				<span id="nine" class="btn btn-default" ng-click="getDigit(9)">9</span>
+				<span id="multiply" class="btn btn-default" ng-click="operation('*')">*</span>					
+				<span id="four" class="btn btn-default" ng-click="getDigit(4)">4</span>
+				<span id="five" class="btn btn-default" ng-click="getDigit(5)">5</span>
+				<psan id="six" class="btn btn-default" ng-click="getDigit(6)">6</psan>
+				<span id="subtract" class="btn btn-default" ng-click="operation('-')">-</span>
+				<span id="one" class="btn btn-default" ng-click="getDigit(1)">1</span>
+				<span id="two" class="btn btn-default" ng-click="getDigit(2)">2</span>
+				<span id="three" class="btn btn-default" ng-click="getDigit(3)">3</span>
+				<span id="plus" class="btn btn-default" ng-click="operation('+')">+</span>
+				<span id="zero" class="btn btn-default" ng-click="getDigit(0)">0</span>
+				<span id="comma" class="btn btn-default" ng-click="">,</span>
+				<span id="equall" class="btn btn-default" ng-click="calc()">=</span>							
+			</div>
+		</div>
+	</div>
+</body>
+</html>

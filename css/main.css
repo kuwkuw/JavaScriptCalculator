@@ -1,0 +1,39 @@
+.container{
+
+}
+
+.calc{
+	background: #e5ebec;
+	width: 200px;
+	margin: 40px auto;
+
+	border-radius: 10px;
+}
+
+.display{
+	text-align: right;
+	padding: 10px 2px;
+	background: #ebeaea;
+	display: inline-block;
+	border: 1px solid #bfbebe;
+	border-radius: 4px;
+	height: 40px;
+	width: 180px;
+	margin: 20px 10px;
+}
+
+.buttons{
+	padding: 0 10px 10px 10px;
+  	
+}
+
+
+.btn{
+	width: 42px;
+	border: 1px solid #bfbebe;
+	border-radius: 4px;
+}
+
+#zero{
+	width: 88px;
+}
